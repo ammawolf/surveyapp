@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A beautiful survey/questionnaire app for collecting responses",
   "private": true,
-  "homepage": "https://ammawolf.github.io/survey-app"
+  "homepage": "https://ammawolf.github.io/survey-app",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
