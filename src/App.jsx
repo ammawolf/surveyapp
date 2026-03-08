@@ -5,16 +5,18 @@ function App() {
   const [questions, setQuestions] = useState([
     {
       id: 1,
-      text: "What's your favorite programming language?",
-      options: ['JavaScript', 'Python', 'Rust', 'TypeScript'],
-      notes: '',
+      text: "You asked me to, "add the newsletter updates to my base so I can consistently read them on time" Yes, but which newsletter is this?",
+      options: ['Landmark', 'Northwest Montessori', 'Something Else', ''],
+      notes: 'The link is not shared with me so I can't open it.
+
+https://drive.google.com/drive/u/0/folders/16nBR06Wf4ymhuSR-9v6eLxg4QI7GNBcK',
       type: 'survey'
     },
     {
       id: 2,
-      text: "How satisfied are you with your current tools?",
-      options: ['Very Satisfied', 'Satisfied', 'Neutral', 'Dissatisfied'],
-      notes: '',
+      text: "Results from Vet",
+      options: ['1', 'Thank You', '2', '3'],
+      notes: 'Midnight's fecal sample was negative for parasites or parasite eggs, which is great news! Please let us know if you have any questions.',
       type: 'survey'
     },
     {
