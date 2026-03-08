@@ -11,9 +11,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -33,7 +31,6 @@
     ]
   },
   "devDependencies": {
-    "react-scripts": "5.0.1",
-    "gh-pages": "^5.0.0"
+    "react-scripts": "5.0.1"
   }
 }
