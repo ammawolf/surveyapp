@@ -63,40 +63,47 @@ npm start
 npm run build
 ```
 
-**Deploy to GitHub Pages:**
-```bash
-npm run deploy
-```
-
 ## Deployment to GitHub Pages
 
-### Initial Setup
+This project is configured with **GitHub Actions** for automatic deployment. No local npm install needed!
 
-1. Update the `homepage` field in `package.json`:
-```json
-"homepage": "https://yourusername.github.io/survey-app"
-```
+### Initial Setup (One-time)
 
-2. Install gh-pages if not already installed:
-```bash
-npm install --save-dev gh-pages
-```
+1. **Create a GitHub repository** called `survey-app`
 
-### Deploy
+2. **Upload your files to GitHub:**
+   - Use GitHub's web interface to create the repository and upload the files
+   - Or if you have git installed, push the code to main branch
 
-1. Make sure all changes are committed
-2. Run:
-```bash
-npm run deploy
-```
+3. **Update `package.json`** - Change the `homepage` field:
+   ```json
+   "homepage": "https://yourusername.github.io/survey-app"
+   ```
+   Replace `yourusername` with your GitHub username.
 
-This will build your app and push it to the `gh-pages` branch automatically.
+4. **Enable GitHub Pages:**
+   - Go to your repository on GitHub
+   - Click **Settings** (top right)
+   - Scroll to **Pages** (left sidebar)
+   - Under "Build and deployment":
+     - Source: Select **"GitHub Actions"**
+   - Click **Save**
 
-3. Go to your GitHub repository Settings → Pages and ensure:
-   - Source is set to "Deploy from a branch"
-   - Branch is set to `gh-pages` with `/root` directory
+### Automatic Deployment
 
-Your survey will be live at: `https://yourusername.github.io/survey-app`
+Once configured, the GitHub Action will automatically:
+- Run whenever you push code to the `main` branch
+- Install dependencies
+- Build your app
+- Deploy to GitHub Pages
+
+Your site will be live at: `https://yourusername.github.io/survey-app`
+
+It may take 1-2 minutes after pushing for deployment to complete. Check the **Actions** tab to monitor progress.
+
+### Updating Your App
+
+Simply edit files in GitHub's web editor or push changes - the workflow runs automatically!
 
 ## How to Use
 
